@@ -1,0 +1,17 @@
+$slow-in-fast-out-timing-function: cubic-bezier(1, 0, 0.4, 1);
+$fast-in-slow-out-timing-function: cubic-bezier(0, 0.5, 0.5, 1);
+
+$sans-serif-font-stack: (
+  'Spoqa Han Sans Neo',
+  Roboto, // Android, Chrome OS
+  -apple-system, // iOS
+  BlinkMacSystemFont, // macOS
+  Segoe UI, // Windows
+  Oxygen, // KDE
+  Droid Sans, // Android
+  Ubuntu, // Ubuntu
+  Cantarell, // GNOME
+  Open Sans, // any
+  Helvetica Neue, // macOS
+  sans-serif
+);

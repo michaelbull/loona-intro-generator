@@ -1,0 +1,39 @@
+.field {
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.field__label {
+  flex: 1 1 100%;
+
+  display: flex;
+  align-items: center;
+
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.field__input {
+  display: block;
+
+  margin: 0;
+  padding: 0.5em;
+
+  min-width: 0; // https://stackoverflow.com/a/43361500
+  min-height: 44px;
+
+  width: 100%;
+
+  font-family: $sans-serif-font-stack;
+
+  background: $grey-50;
+  border: 2px solid $grey-400;
+
+  &:focus {
+    outline: 0;
+    border-color: $blue-400;
+  }
+}

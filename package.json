@@ -1,0 +1,57 @@
+{
+  "name": "loona-intro-generator",
+  "version": "0.0.1",
+  "description": "Create your own animated intro sequence based on the LOONA music videos.",
+  "keywords": [
+    "loona",
+    "loonatheworld",
+    "LOOΠΔ",
+    "ㅇㄷㅇㅅㄴ",
+    "girl of the month",
+    "이달의 소녀",
+    "animated",
+    "svg",
+    "css",
+    "intro",
+    "introduction",
+    "animation",
+    "generator"
+  ],
+  "homepage": "https://github.com/michaelbull/loona-intro-generator#readme",
+  "bugs": {
+    "url": "https://github.com/michaelbull/loona-intro-generator/issues"
+  },
+  "license": "ISC",
+  "author": {
+    "name": "Michael Bull",
+    "url": "https://www.michael-bull.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/michaelbull/loona-intro-generator.git"
+  },
+  "scripts": {
+    "start": "webpack serve --config webpack.dev.js --inline --hot",
+    "build": "webpack --config webpack.prod.js",
+    "predeploy": "npm run build",
+    "deploy": "push-dir --dir=dist --branch=gh-pages"
+  },
+  "devDependencies": {
+    "css-loader": "5.2.6",
+    "cssnano": "5.0.5",
+    "cssnano-preset-advanced": "5.1.2",
+    "html-webpack-plugin": "5.3.1",
+    "mini-css-extract-plugin": "1.6.0",
+    "postcss-loader": "5.3.0",
+    "push-dir": "0.4.1",
+    "sass": "1.34.1",
+    "sass-loader": "12.0.0",
+    "style-loader": "2.0.0",
+    "ts-loader": "9.2.2",
+    "typescript": "4.3.2",
+    "webpack": "5.38.1",
+    "webpack-cli": "4.7.0",
+    "webpack-dev-server": "3.11.2",
+    "webpack-merge": "5.7.3"
+  }
+}

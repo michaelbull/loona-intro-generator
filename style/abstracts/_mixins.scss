@@ -1,0 +1,18 @@
+@mixin icon() {
+  svg {
+    display: block;
+    width: 1em;
+    height: 1em;
+
+    path,
+    polygon,
+    rect {
+      fill: currentColor;
+    }
+
+    circle {
+      stroke: currentColor;
+      stroke-width: 1;
+    }
+  }
+}

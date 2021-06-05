@@ -1,0 +1,494 @@
+.logo {
+  width: 100%;
+  height: 100%;
+
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.logo--animating {
+  animation-name: logo-animation;
+  animation-fill-mode: forwards;
+  will-change: background-color;
+}
+
+.logo__l,
+.logo__o1,
+.logo__o2,
+.logo__n,
+.logo__a,
+.logo__slash {
+  opacity: 0;
+}
+
+.logo__o1--animating {
+  animation-name: o1-animation;
+  animation-fill-mode: forwards;
+  transform-box: fill-box;
+  transform-origin: center;
+  will-change: opacity, stroke, transform, animation-timing-function;
+}
+
+.logo__n--animating {
+  animation-name: n-animation;
+  animation-fill-mode: forwards;
+  transform-box: fill-box;
+  transform-origin: left bottom;
+  will-change: opacity, stroke, transform, animation-timing-function;
+}
+
+.logo__o2--animating {
+  animation-name: o2-animation;
+  animation-fill-mode: forwards;
+  transform-box: fill-box;
+  transform-origin: center;
+  will-change: opacity, stroke, transform, animation-timing-function;
+}
+
+.logo__l--animating {
+  animation-name: l-animation;
+  animation-fill-mode: forwards;
+  transform-box: fill-box;
+  transform-origin: center;
+  will-change: opacity, stroke, transform, animation-timing-function;
+}
+
+.logo__a--animating {
+  animation-name: a-animation;
+  animation-fill-mode: forwards;
+  transform-box: fill-box;
+  transform-origin: center;
+  will-change: opacity, stroke, transform, animation-timing-function;
+}
+
+.logo__slash--animating {
+  animation-name: slash-animation;
+  animation-fill-mode: forwards;
+  transform-box: fill-box;
+  transform-origin: center;
+  will-change: opacity, stroke, transform, animation-timing-function;
+}
+
+.logo__circle--animating {
+  animation-name: circle-animation;
+  animation-fill-mode: forwards;
+  transform-box: fill-box;
+  transform-origin: center;
+  will-change: fill;
+}
+
+.logo__crescent--animating {
+  animation-fill-mode: forwards;
+  transform-box: fill-box;
+  transform-origin: center;
+  will-change: transform, animation-timing-function;
+}
+
+.logo__crescent--ltr.logo__crescent--animating {
+  animation-name: crescent-animation-ltr;
+}
+
+.logo__crescent--rtl.logo__crescent--animating {
+  animation-name: crescent-animation-rtl;
+}
+
+.logo__glyphs--animating {
+  animation-name: glyphs-animation;
+  animation-fill-mode: forwards;
+  transform-box: view-box;
+  transform-origin: center;
+}
+
+@keyframes logo-animation {
+  0% {
+    background-color: var(--color-bg-start);
+  }
+
+  54% {
+    background-color: var(--color-bg-start);
+  }
+
+  55% {
+    background-color: var(--color-bg-end);
+  }
+
+  100% {
+    background-color: var(--color-bg-end);
+  }
+}
+
+@keyframes o1-animation {
+  0% {
+    opacity: 0;
+    stroke: var(--color-loona-start);
+  }
+
+  1% {
+    opacity: 0;
+  }
+
+  2% {
+    opacity: 0.6;
+    transform: scale3d(0.9, 0.9, 1);
+  }
+
+  3% {
+    opacity: 1;
+  }
+
+  5% {
+    transform: none;
+  }
+
+  42% {
+    transform: none;
+    animation-timing-function: $slow-in-fast-out-timing-function;
+  }
+
+  54% {
+    stroke: var(--color-loona-start);
+  }
+
+  55% {
+    stroke: var(--color-loona-end);
+  }
+
+  59% {
+    transform: translate3d(18%, 153%, 0);
+  }
+
+  99% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    stroke: var(--color-loona-end);
+    transform: translate3d(18%, 153%, 0);
+  }
+}
+
+@keyframes n-animation {
+  0% {
+    opacity: 0;
+    stroke: var(--color-loona-start);
+  }
+
+  5% {
+    opacity: 0;
+  }
+
+  6% {
+    opacity: 0.6;
+    transform: rotate3d(0, 0, 1, 70deg);
+  }
+
+  8% {
+    opacity: 1;
+  }
+
+  10% {
+    transform: none;
+  }
+
+  42% {
+    transform: none;
+    animation-timing-function: $slow-in-fast-out-timing-function;
+  }
+
+  54% {
+    stroke: var(--color-loona-start);
+  }
+
+  55% {
+    stroke: var(--color-loona-end);
+  }
+
+  59% {
+    transform: rotate3d(0, 0, 1, 90deg) translate3d(52%, 10%, 0);
+  }
+
+  99% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    stroke: var(--color-loona-end);
+    transform: rotate3d(0, 0, 1, 90deg) translate3d(52%, 10%, 0);
+  }
+}
+
+@keyframes o2-animation {
+  0% {
+    opacity: 0;
+    stroke: var(--color-loona-start);
+  }
+
+  7% {
+    opacity: 0;
+  }
+
+  8% {
+    opacity: 0.6;
+    transform: translate3d(-33%, 0, 0);
+  }
+
+  9% {
+    opacity: 1;
+  }
+
+  12% {
+    transform: none;
+  }
+
+  42% {
+    transform: none;
+    animation-timing-function: $slow-in-fast-out-timing-function;
+  }
+
+  54% {
+    stroke: var(--color-loona-start);
+  }
+
+  55% {
+    stroke: var(--color-loona-end);
+  }
+
+  59% {
+    transform: translate3d(-100%, 3%, 0);
+  }
+
+  99% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    stroke: var(--color-loona-end);
+    transform: translate3d(-100%, 3%, 0);
+  }
+}
+
+@keyframes l-animation {
+  0% {
+    opacity: 0;
+    stroke: var(--color-loona-start);
+  }
+
+  13% {
+    opacity: 0;
+  }
+
+  14% {
+    opacity: 0.6;
+    transform: rotate3d(0, 0, 1, -80deg);
+  }
+
+  16% {
+    opacity: 1;
+  }
+
+  21% {
+    transform: none;
+  }
+
+  42% {
+    transform: none;
+    animation-timing-function: $slow-in-fast-out-timing-function;
+  }
+
+  54% {
+    stroke: var(--color-loona-start);
+  }
+
+  55% {
+    stroke: var(--color-loona-end);
+  }
+
+  59% {
+    transform: translate3d(-350%, -150%, 0);
+  }
+
+  99% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    stroke: var(--color-loona-end);
+    transform: translate3d(-350%, -150%, 0);
+  }
+}
+
+@keyframes a-animation {
+  0% {
+    opacity: 0;
+    stroke: var(--color-loona-start);
+  }
+
+  15% {
+    opacity: 0;
+  }
+
+  16% {
+    opacity: 0.6;
+    transform: translate3d(0, 20%, 0);
+  }
+
+  18% {
+    opacity: 1;
+  }
+
+  20% {
+    transform: none;
+  }
+
+  42% {
+    transform: none;
+    animation-timing-function: $slow-in-fast-out-timing-function;
+  }
+
+  54% {
+    stroke: var(--color-loona-start);
+  }
+
+  55% {
+    stroke: var(--color-loona-end);
+  }
+
+  59% {
+    transform: translate3d(255%, -150%, 0);
+  }
+
+  99% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    stroke: var(--color-loona-end);
+    transform: translate3d(255%, -150%, 0);
+  }
+}
+
+@keyframes slash-animation {
+  0% {
+    opacity: 0;
+    stroke: var(--color-slash-start);
+  }
+
+  18% {
+    opacity: 0;
+  }
+
+  19% {
+    opacity: 0.6;
+    transform: rotate3d(0, 0, 1, 70deg) scale3d(0.6, 0.6, 1);
+  }
+
+  21% {
+    opacity: 1;
+  }
+
+  23% {
+    transform: none;
+  }
+
+  42% {
+    transform: none;
+    animation-timing-function: $slow-in-fast-out-timing-function;
+  }
+
+  54% {
+    stroke: var(--color-slash-start);
+  }
+
+  55% {
+    stroke: var(--color-slash-end);
+  }
+
+  59% {
+    transform: translate3d(220%, 1%, 0);
+  }
+
+  99% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    stroke: var(--color-slash-end);
+    transform: translate3d(220%, 1%, 0);
+  }
+}
+
+@keyframes circle-animation {
+  0% {
+    fill: none;
+  }
+
+  54% {
+    fill: none;
+  }
+
+  55% {
+    fill: var(--color-eclipse-start);
+  }
+
+  100% {
+    fill: var(--color-eclipse-end);
+  }
+}
+
+@keyframes crescent-animation-rtl {
+  0% {
+    transform: translate3d(1400px, 0, 0);
+  }
+
+  54% {
+    transform: translate3d(1400px, 0, 0);
+    animation-timing-function: $fast-in-slow-out-timing-function;
+  }
+
+  80% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes crescent-animation-ltr {
+  0% {
+    transform: translate3d(-1400px, 0, 0);
+  }
+
+  54% {
+    transform: translate3d(-1400px, 0, 0);
+    animation-timing-function: $fast-in-slow-out-timing-function;
+  }
+
+  80% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes glyphs-animation {
+  0% {
+    transform: none;
+  }
+
+  62% {
+    transform: none;
+  }
+
+  100% {
+    transform: scale3d(0.95, 0.95, 1);
+  }
+}
