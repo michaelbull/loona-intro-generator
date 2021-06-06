@@ -258,7 +258,7 @@ export const THEMES: Theme[] = [
         }
     },
     {
-        /* https://www.youtube.com/watch?v=0-snXdhDs1w */
+        /* https://www.youtube.com/watch?v=b6li05zh3Kg */
         id: '[12:00]',
         name: '[12:00] (Why Not?)',
         eclipseDirection: 'rtl',
