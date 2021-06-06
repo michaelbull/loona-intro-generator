@@ -1,5 +1,4 @@
 import { defaultColorPalette } from './color-palette';
-import { DOM } from './dom';
 import { Theme } from './theme';
 
 export const THEMES: Theme[] = [

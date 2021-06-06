@@ -31,8 +31,8 @@ export function parseDom(doc: Document = document): DOM {
         loonaEndColorElement: doc.getElementById('color-loona-end') as HTMLInputElement,
         slashStartColorElement: doc.getElementById('color-slash-start') as HTMLInputElement,
         slashEndColorElement: doc.getElementById('color-slash-end') as HTMLInputElement,
-        startElement: doc.getElementById('start') as HTMLButtonElement,
-    }
+        startElement: doc.getElementById('start') as HTMLButtonElement
+    };
 }
 
 export function addEventListeners(dom: DOM): void {

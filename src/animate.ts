@@ -1,6 +1,6 @@
 import { currentColorPalette } from './color-palette';
-import { eclipseDirection } from './eclipse-direction';
 import { DOM } from './dom';
+import { eclipseDirection } from './eclipse-direction';
 import { logoElements } from './logo';
 
 export function animate(dom: DOM): void {

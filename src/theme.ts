@@ -1,9 +1,6 @@
-import {
-    ColorPalette,
-    defaultColorPalette
-} from './color-palette';
-import { EclipseDirection } from './eclipse-direction';
+import { ColorPalette } from './color-palette';
 import { DOM } from './dom';
+import { EclipseDirection } from './eclipse-direction';
 import { THEMES } from './themes';
 
 export interface Theme {

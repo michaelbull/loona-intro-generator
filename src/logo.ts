@@ -8,7 +8,7 @@ const LOGO_ELEMENT_CLASSNAMES = [
     'logo__slash',
     'logo__circle',
     'logo__crescent',
-    'logo__glyphs',
+    'logo__glyphs'
 ];
 
 export function logoElements(): SVGElement[] {

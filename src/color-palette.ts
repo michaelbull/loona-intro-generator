@@ -25,8 +25,8 @@ export function defaultColorPalette(): ColorPalette {
         loonaStart: DEFAULT_LOONA_COLOR,
         loonaEnd: DEFAULT_LOONA_COLOR,
         slashStart: DEFAULT_SLASH_COLOR,
-        slashEnd: DEFAULT_SLASH_COLOR,
-    }
+        slashEnd: DEFAULT_SLASH_COLOR
+    };
 }
 
 export function currentColorPalette(dom: DOM): ColorPalette {
@@ -38,6 +38,6 @@ export function currentColorPalette(dom: DOM): ColorPalette {
         loonaStart: dom.loonaStartColorElement.value,
         loonaEnd: dom.loonaEndColorElement.value,
         slashStart: dom.slashStartColorElement.value,
-        slashEnd: dom.slashEndColorElement.value,
+        slashEnd: dom.slashEndColorElement.value
     };
 }
