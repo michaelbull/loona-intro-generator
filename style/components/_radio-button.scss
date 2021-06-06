@@ -52,16 +52,16 @@
   }
 
   &:focus,
-  &:active,
-  &:checked {
+  &:active {
     &::before {
-      border-color: $blue-400;
+      border-color: $blue-300;
     }
   }
 
   &:checked {
     &::after {
       background-color: $blue-400;
+      border-color: $blue-400;
       transform: scale(0.5);
     }
   }
