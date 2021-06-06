@@ -54,15 +54,25 @@
   &:focus,
   &:active {
     &::before {
-      border-color: $blue-300;
+      border-color: $blue-200;
     }
   }
 
   &:checked {
+    &::before {
+      border-color: $blue-400;
+    }
+
     &::after {
       background-color: $blue-400;
-      border-color: $blue-400;
       transform: scale(0.5);
+    }
+
+    &:focus,
+    &:active {
+      &::before {
+        border-color: $blue-200;
+      }
     }
   }
 }
