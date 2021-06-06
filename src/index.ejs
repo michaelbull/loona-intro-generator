@@ -49,13 +49,19 @@
               <option value="1/3">1/3</option>
               <option value="yyxy">Youth Youth by Young (yyxy)</option>
               <option value="oec">오드아이써클 (Odd Eye Circle)</option>
+              <option value="[++]">[+ +] (favOriTe / Hi High)</option>
+              <option value="[xx]">[× ×] (Butterfly / 365)</option>
+              <option value="[#]">[#] (So What)</option>
+              <option value="[12:00]">[12:00] (Why Not?)</option>
             </select>
           </div>
         </div>
 
-        <div class="control-bar__direction">
+        <div class="control-bar__divider"></div>
+
+        <div class="control-bar__column">
           <span>
-            <label class="field__label">Eclipse direction:</label>
+            <label class="field__label">Eclipse:</label>
           </span>
 
           <div class="radio-button" title="The eclipse transitions from a full moon to crescent moon left-to-right">
@@ -84,9 +90,37 @@
           </div>
         </div>
 
-        <div class="control-bar__colors">
+        <div class="control-bar__column">
           <span>
-            <label class="field__label">Eclipse:</label>
+            <label class="field__label">&nbsp;</label>
+          </span>
+
+          <div class="checkbox" title="The eclipse will transition between the OT12 member colors debut order, overriding custom colors">
+            <input
+              class="checkbox__input"
+              type="checkbox"
+              id="ot12-color"
+              name="ot12-color"
+            />
+
+            <label class="checkbox__label" for="ot12-color">Use OT12 colors</label>
+          </div>
+
+          <div class="checkbox" title="Reverse the member order from last debuted to first">
+            <input
+              class="checkbox__input"
+              type="checkbox"
+              id="ot12-reverse"
+              name="ot12-reverse"
+            />
+
+            <label class="checkbox__label" for="ot12-reverse">Reverse order</label>
+          </div>
+        </div>
+
+        <div class="control-bar__column">
+          <span>
+            <label class="field__label">&nbsp;</label>
           </span>
 
           <div class="color-picker" title="The color of the eclipse when it first appears">
@@ -114,7 +148,9 @@
           </div>
         </div>
 
-        <div class="control-bar__colors">
+        <div class="control-bar__divider"></div>
+
+        <div class="control-bar__column">
           <span>
             <label class="field__label">Background:</label>
           </span>
@@ -144,7 +180,9 @@
           </div>
         </div>
 
-        <div class="control-bar__colors">
+        <div class="control-bar__divider"></div>
+
+        <div class="control-bar__column">
           <span>
             <label class="field__label">LOOΠΔ:</label>
           </span>
@@ -174,7 +212,9 @@
           </div>
         </div>
 
-        <div class="control-bar__colors">
+        <div class="control-bar__divider"></div>
+
+        <div class="control-bar__column">
           <span>
             <label class="field__label">&ldquo;/&rdquo;:</label>
           </span>

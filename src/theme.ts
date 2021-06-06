@@ -6,6 +6,8 @@ import { THEMES } from './themes';
 export interface Theme {
     readonly id: string;
     readonly name: string;
+    readonly ot12Colors: boolean;
+    readonly ot12Reverse: boolean;
     readonly eclipseDirection: EclipseDirection;
     readonly colors: ColorPalette;
 }
@@ -16,6 +18,8 @@ export function applyTheme(dom: DOM): void {
 
     dom.directionLtrElement.checked = theme.eclipseDirection === 'ltr';
     dom.directionRtlElement.checked = theme.eclipseDirection === 'rtl';
+    dom.ot12ColorElement.checked = theme.ot12Colors;
+    dom.ot12ReverseElement.checked = theme.ot12Reverse;
     dom.eclipseStartColorElement.value = theme.colors.eclipseStart;
     dom.eclipseEndColorElement.value = theme.colors.eclipseEnd;
     dom.backgroundStartColorElement.value = theme.colors.backgroundStart;

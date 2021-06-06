@@ -6,6 +6,8 @@ export interface DOM {
     readonly themeElement: HTMLSelectElement;
     readonly directionLtrElement: HTMLInputElement;
     readonly directionRtlElement: HTMLInputElement;
+    readonly ot12ColorElement: HTMLInputElement;
+    readonly ot12ReverseElement: HTMLInputElement;
     readonly eclipseStartColorElement: HTMLInputElement;
     readonly eclipseEndColorElement: HTMLInputElement;
     readonly backgroundStartColorElement: HTMLInputElement;
@@ -23,6 +25,8 @@ export function parseDom(doc: Document = document): DOM {
         themeElement: doc.getElementById('theme') as HTMLSelectElement,
         directionLtrElement: doc.getElementById('direction-ltr') as HTMLInputElement,
         directionRtlElement: doc.getElementById('direction-rtl') as HTMLInputElement,
+        ot12ColorElement: doc.getElementById('ot12-color') as HTMLInputElement,
+        ot12ReverseElement: doc.getElementById('ot12-reverse') as HTMLInputElement,
         eclipseStartColorElement: doc.getElementById('color-eclipse-start') as HTMLInputElement,
         eclipseEndColorElement: doc.getElementById('color-eclipse-end') as HTMLInputElement,
         backgroundStartColorElement: doc.getElementById('color-bg-start') as HTMLInputElement,

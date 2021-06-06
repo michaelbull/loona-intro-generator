@@ -77,6 +77,14 @@
   will-change: fill;
 }
 
+.logo__circle--animating.logo__circle--ot12 {
+  animation-name: circle-animation-ot12;
+}
+
+.logo__circle--animating.logo__circle--ot12-reverse {
+  animation-name: circle-animation-ot12-reverse;
+}
+
 .logo__crescent--animating {
   animation-fill-mode: forwards;
   transform-box: fill-box;
@@ -104,11 +112,11 @@
     background-color: var(--color-bg-start);
   }
 
-  54% {
+  56% {
     background-color: var(--color-bg-start);
   }
 
-  55% {
+  57% {
     background-color: var(--color-bg-end);
   }
 
@@ -145,15 +153,15 @@
     animation-timing-function: $slow-in-fast-out-timing-function;
   }
 
-  54% {
+  56% {
     stroke: var(--color-loona-start);
   }
 
-  55% {
+  57% {
     stroke: var(--color-loona-end);
   }
 
-  59% {
+  60% {
     transform: translate3d(18%, 153%, 0);
   }
 
@@ -196,15 +204,15 @@
     animation-timing-function: $slow-in-fast-out-timing-function;
   }
 
-  54% {
+  56% {
     stroke: var(--color-loona-start);
   }
 
-  55% {
+  57% {
     stroke: var(--color-loona-end);
   }
 
-  59% {
+  60% {
     transform: rotate3d(0, 0, 1, 90deg) translate3d(52%, 10%, 0);
   }
 
@@ -247,15 +255,15 @@
     animation-timing-function: $slow-in-fast-out-timing-function;
   }
 
-  54% {
+  56% {
     stroke: var(--color-loona-start);
   }
 
-  55% {
+  57% {
     stroke: var(--color-loona-end);
   }
 
-  59% {
+  60% {
     transform: translate3d(-100%, 3%, 0);
   }
 
@@ -298,15 +306,15 @@
     animation-timing-function: $slow-in-fast-out-timing-function;
   }
 
-  54% {
+  56% {
     stroke: var(--color-loona-start);
   }
 
-  55% {
+  57% {
     stroke: var(--color-loona-end);
   }
 
-  59% {
+  60% {
     transform: translate3d(-350%, -150%, 0);
   }
 
@@ -349,15 +357,15 @@
     animation-timing-function: $slow-in-fast-out-timing-function;
   }
 
-  54% {
+  56% {
     stroke: var(--color-loona-start);
   }
 
-  55% {
+  57% {
     stroke: var(--color-loona-end);
   }
 
-  59% {
+  60% {
     transform: translate3d(255%, -150%, 0);
   }
 
@@ -400,15 +408,15 @@
     animation-timing-function: $slow-in-fast-out-timing-function;
   }
 
-  54% {
+  56% {
     stroke: var(--color-slash-start);
   }
 
-  55% {
+  57% {
     stroke: var(--color-slash-end);
   }
 
-  59% {
+  60% {
     transform: translate3d(220%, 1%, 0);
   }
 
@@ -428,11 +436,11 @@
     fill: none;
   }
 
-  54% {
+  56% {
     fill: none;
   }
 
-  55% {
+  57% {
     fill: var(--color-eclipse-start);
   }
 
@@ -441,17 +449,237 @@
   }
 }
 
-@keyframes crescent-animation-rtl {
+@keyframes circle-animation-ot12 {
   0% {
-    transform: translate3d(1400px, 0, 0);
+    fill: none;
   }
 
-  54% {
-    transform: translate3d(1400px, 0, 0);
-    animation-timing-function: $fast-in-slow-out-timing-function;
+  56% {
+    fill: none;
+  }
+
+  57% {
+    fill: $color-heejin;
+  }
+
+  58% {
+    fill: $color-heejin;
+  }
+
+  59% {
+    fill: $color-hyunjin;
+  }
+
+  60% {
+    fill: $color-hyunjin;
+  }
+
+  61% {
+    fill: $color-haseul;
+  }
+
+  62% {
+    fill: $color-haseul;
+  }
+
+  63% {
+    fill: $color-yeojin;
+  }
+
+  64% {
+    fill: $color-yeojin;
+  }
+
+  65% {
+    fill: $color-vivi;
+  }
+
+  66% {
+    fill: $color-vivi;
+  }
+
+  67% {
+    fill: $color-kim-lip;
+  }
+
+  68% {
+    fill: $color-kim-lip;
+  }
+
+  69% {
+    fill: $color-jinsoul;
+  }
+
+  70% {
+    fill: $color-jinsoul;
+  }
+
+  71% {
+    fill: $color-choerry;
+  }
+
+  72% {
+    fill: $color-choerry;
+  }
+
+  73% {
+    fill: $color-yves;
+  }
+
+  74% {
+    fill: $color-yves;
+  }
+
+  75% {
+    fill: $color-chuu;
+  }
+
+  76% {
+    fill: $color-chuu;
+  }
+
+  77% {
+    fill: $color-go-won;
+  }
+
+  78% {
+    fill: $color-go-won;
+  }
+
+  79% {
+    fill: $color-olivia-hye;
   }
 
   80% {
+    fill: $color-olivia-hye;
+  }
+
+  100% {
+    fill: $color-olivia-hye;
+  }
+}
+
+@keyframes circle-animation-ot12-reverse {
+  0% {
+    fill: none;
+  }
+
+  56% {
+    fill: none;
+  }
+
+  57% {
+    fill: $color-olivia-hye;
+  }
+
+  58% {
+    fill: $color-olivia-hye;
+  }
+
+  59% {
+    fill: $color-go-won;
+  }
+
+  60% {
+    fill: $color-go-won;
+  }
+
+  61% {
+    fill: $color-chuu;
+  }
+
+  62% {
+    fill: $color-chuu;
+  }
+
+  63% {
+    fill: $color-yves;
+  }
+
+  64% {
+    fill: $color-yves;
+  }
+
+  65% {
+    fill: $color-choerry;
+  }
+
+  66% {
+    fill: $color-choerry;
+  }
+
+  67% {
+    fill: $color-jinsoul;
+  }
+
+  68% {
+    fill: $color-jinsoul;
+  }
+
+  69% {
+    fill: $color-kim-lip;
+  }
+
+  70% {
+    fill: $color-kim-lip;
+  }
+
+  71% {
+    fill: $color-vivi;
+  }
+
+  72% {
+    fill: $color-vivi;
+  }
+
+  73% {
+    fill: $color-yeojin;
+  }
+
+  74% {
+    fill: $color-yeojin;
+  }
+
+  75% {
+    fill: $color-haseul;
+  }
+
+  76% {
+    fill: $color-haseul;
+  }
+
+  77% {
+    fill: $color-hyunjin;
+  }
+
+  78% {
+    fill: $color-hyunjin;
+  }
+
+  79% {
+    fill: $color-heejin;
+  }
+
+  80% {
+    fill: $color-heejin;
+  }
+
+  100% {
+    fill: $color-heejin;
+  }
+}
+
+@keyframes crescent-animation-rtl {
+  0% {
+    transform: translate3d(1700px, 0, 0);
+  }
+
+  57% {
+    transform: translate3d(1700px, 0, 0);
+    animation-timing-function: $fast-in-slow-out-timing-function;
+  }
+
+  82% {
     transform: translate3d(0, 0, 0);
   }
 
@@ -462,15 +690,15 @@
 
 @keyframes crescent-animation-ltr {
   0% {
-    transform: translate3d(-1400px, 0, 0);
+    transform: translate3d(-1700px, 0, 0);
   }
 
-  54% {
-    transform: translate3d(-1400px, 0, 0);
+  57% {
+    transform: translate3d(-1700px, 0, 0);
     animation-timing-function: $fast-in-slow-out-timing-function;
   }
 
-  80% {
+  82% {
     transform: translate3d(0, 0, 0);
   }
 

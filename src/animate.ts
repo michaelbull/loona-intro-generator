@@ -15,6 +15,8 @@ export function animate(dom: DOM): void {
             element.classList.remove(`${base}--animating`);
             element.classList.remove(`${base}--ltr`);
             element.classList.remove(`${base}--rtl`);
+            element.classList.remove(`${base}--ot12`);
+            element.classList.remove(`${base}--ot12-reverse`);
         });
     });
 
@@ -25,6 +27,15 @@ export function animate(dom: DOM): void {
             element.style.animationDuration = duration;
             element.classList.add(`${base}--animating`);
             element.classList.add(`${base}--${direction}`);
+
+            if (dom.ot12ColorElement.checked) {
+                element.classList.add(`${base}--ot12`);
+            }
+
+            if (dom.ot12ReverseElement.checked) {
+                element.classList.add(`${base}--ot12-reverse`);
+            }
+
             element.style.setProperty('--color-bg-start', colors.backgroundStart);
             element.style.setProperty('--color-bg-end', colors.backgroundEnd);
             element.style.setProperty('--color-eclipse-start', colors.eclipseStart);
