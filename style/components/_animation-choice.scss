@@ -1,0 +1,75 @@
+@use 'sass:math';
+@use '../abstracts/material-colors';
+@use '../abstracts/material-elevation';
+@use '../abstracts/timing-functions';
+
+.animation-choice {
+  @include material-elevation.elevation(2);
+
+  flex-grow: 1;
+
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  max-width: 418px;
+
+  text-decoration: none;
+  border: 2px solid material-colors.$grey-400;
+  border-radius: 4px;
+
+  overflow: hidden;
+
+  transition-property: box-shadow, border-color;
+  transition-duration: 280ms;
+  transition-timing-function: timing-functions.$fast-out-slow-in;
+
+  &:hover,
+  &:focus {
+    @include material-elevation.elevation(4);
+  }
+
+  &:active {
+    @include material-elevation.elevation(12);
+    border-color: material-colors.$blue-400;
+  }
+}
+
+.animation-choice__background {
+  width: 100%;
+  height: 0;
+
+  overflow: hidden;
+  background-size: cover;
+  padding-top: percentage(math.div(375, 600));
+
+  border-bottom: 1px solid material-colors.$grey-400;
+}
+
+.animation-choice__background--eclipse {
+  background-image: url('../assets/preview-eclipse.gif');
+}
+
+.animation-choice__background--yyxy {
+  background-image: url('../assets/preview-yyxy.gif');
+}
+
+.animation-choice__background--oec {
+  background-image: url('../assets/preview-oec.gif');
+}
+
+.animation-choice__label {
+  padding: {
+    top: 0.5em;
+    bottom: 0.5em;
+  }
+
+  text-align: center;
+  color: material-colors.$grey-900;
+
+  font-size: 1.5rem;
+  font-weight: 600;
+}

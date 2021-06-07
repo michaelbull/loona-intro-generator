@@ -1,12 +1,12 @@
 import { currentColorPalette } from './color-palette';
+import { currentDirection } from './direction';
 import { DOM } from './dom';
-import { eclipseDirection } from './eclipse-direction';
 import { logoElements } from './logo';
 
 export function animate(dom: DOM): void {
     let duration = dom.durationElement.value;
     let elements = logoElements();
-    let direction = eclipseDirection(dom);
+    let direction = currentDirection(dom);
     let colors = currentColorPalette(dom);
 
     requestAnimationFrame(() => {

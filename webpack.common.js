@@ -3,7 +3,11 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 
 module.exports = {
-    entry: './src/index.ts',
+    entry: {
+        style: './style/index.ts',
+        index: './src/index.ts',
+        eclipse: './src/eclipse/index.ts'
+    },
     target: 'es5',
 
     output: {
@@ -20,8 +24,12 @@ module.exports = {
                 exclude: /node_modules/
             },
             {
-                test: /\.svg/,
+                test: /\.svg/i,
                 type: 'asset/source'
+            },
+            {
+                test: /\.(png|jpg|gif)$/i,
+                type: 'asset/resource'
             }
         ]
     },
@@ -35,6 +43,16 @@ module.exports = {
 
     plugins: [
         new HtmlWebpackPlugin({
+            filename: 'index.html',
+            template: 'src/index.ejs',
+            chunks: ['style', 'index'],
+            inject: 'head',
+            hash: true
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'eclipse.html',
+            template: 'src/eclipse/index.ejs',
+            chunks: ['style', 'eclipse'],
             inject: 'head',
             hash: true
         }),

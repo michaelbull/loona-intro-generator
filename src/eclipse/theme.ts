@@ -1,6 +1,6 @@
 import { ColorPalette } from './color-palette';
+import { Direction } from './direction';
 import { DOM } from './dom';
-import { EclipseDirection } from './eclipse-direction';
 import { THEMES } from './themes';
 
 export interface Theme {
@@ -8,7 +8,7 @@ export interface Theme {
     readonly name: string;
     readonly ot12Colors: boolean;
     readonly ot12Reverse: boolean;
-    readonly eclipseDirection: EclipseDirection;
+    readonly eclipseDirection: Direction;
     readonly colors: ColorPalette;
 }
 

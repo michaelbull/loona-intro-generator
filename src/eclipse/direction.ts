@@ -1,8 +1,8 @@
 import { DOM } from './dom';
 
-export type EclipseDirection = 'ltr' | 'rtl';
+export type Direction = 'ltr' | 'rtl';
 
-export function eclipseDirection(dom: DOM): EclipseDirection {
+export function currentDirection(dom: DOM): Direction {
     if (dom.directionLtrElement.checked) {
         return 'ltr';
     } else {

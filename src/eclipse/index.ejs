@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+  <head>
+    <title>LOONA Intro Generator</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="keywords" content="loona loonatheworld LOOΠΔ ㅇㄷㅇㅅㄴ girl of the month 이달의 소녀 animated svg css intro introduction animation generator" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Michael Bull <https://www.michael-bull.com>" />
+  </head>
+
+  <body class="eclipse-page">
+    <form class="control-bar">
+      <div class="control-bar__duration">
+        <div class="field">
+          <label class="field__label" for="duration">Duration:</label>
+
+          <input
+            class="field__input"
+            type="text"
+            id="duration"
+            name="duration"
+            value="5s"
+            placeholder="Duration (e.g. 20s, 4000ms)..."
+          />
+        </div>
+      </div>
+
+      <div class="control-bar__theme">
+        <div class="field">
+          <label class="field__label" for="theme">Theme:</label>
+
+          <select class="field__input" name="theme" id="theme">
+            <option value="default">Default</option>
+            <option value="heejin">희진 (HeeJin)</option>
+            <option value="hyunjin">현진 (HyunJin)</option>
+            <option value="haseul">하슬 (HaSeul)</option>
+            <option value="yeojin">여진 (YeoJin)</option>
+            <option value="vivi">비비 (ViVi)</option>
+            <option value="kim-lip">김립 (Kim Lip)</option>
+            <option value="jinsoul">진솔 (JinSoul)</option>
+            <option value="choerry">최리 (Choerry)</option>
+            <option value="yves">이브 (Yves)</option>
+            <option value="chuu">츄 (Chuu)</option>
+            <option value="go-won">고원 (Go Won)</option>
+            <option value="olivia-hye">올리비아 혜 (Olivia Hye)</option>
+            <option value="1/3">1/3</option>
+            <option value="yyxy">Youth Youth by Young (yyxy)</option>
+            <option value="oec">오드아이써클 (Odd Eye Circle)</option>
+            <option value="[++]">[+ +] (favOriTe / Hi High)</option>
+            <option value="[xx]">[× ×] (Butterfly / 365)</option>
+            <option value="[#]">[#] (So What)</option>
+            <option value="[12:00]">[12:00] (Why Not?)</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="control-bar__divider"></div>
+
+      <div class="control-bar__column">
+        <span>
+          <label class="field__label">Eclipse:</label>
+        </span>
+
+        <div class="radio-button" title="The eclipse transitions from a full moon to crescent moon left-to-right">
+          <input
+            class="radio-button__input"
+            type="radio"
+            id="direction-ltr"
+            name="direction"
+            value="ltr"
+          />
+
+          <label class="radio-button__label" for="direction-ltr">Left-to-right</label>
+        </div>
+
+        <div class="radio-button" title="The eclipse transitions from a full moon to crescent moon right-to-left">
+          <input
+            class="radio-button__input"
+            type="radio"
+            id="direction-rtl"
+            name="direction"
+            value="rtl"
+            checked
+          />
+
+          <label class="radio-button__label" for="direction-rtl">Right-to-left</label>
+        </div>
+      </div>
+
+      <div class="control-bar__column">
+        <span>
+          <label class="field__label">&nbsp;</label>
+        </span>
+
+        <div class="checkbox" title="The eclipse will transition between the OT12 member colors debut order, overriding custom colors">
+          <input
+            class="checkbox__input"
+            type="checkbox"
+            id="ot12-color"
+            name="ot12-color"
+          />
+
+          <label class="checkbox__label" for="ot12-color">Use OT12 colors</label>
+        </div>
+
+        <div class="checkbox" title="Reverse the member order from last debuted to first">
+          <input
+            class="checkbox__input"
+            type="checkbox"
+            id="ot12-reverse"
+            name="ot12-reverse"
+          />
+
+          <label class="checkbox__label" for="ot12-reverse">Reverse order</label>
+        </div>
+      </div>
+
+      <div class="control-bar__column">
+        <span>
+          <label class="field__label">&nbsp;</label>
+        </span>
+
+        <div class="color-picker" title="The color of the eclipse when it first appears">
+          <input
+            class="color-picker__input"
+            type="color"
+            id="color-eclipse-start"
+            name="color-eclipse-start"
+            value="#FFCA14"
+          />
+
+          <label class="color-picker__label" for="color-eclipse-start">Start</label>
+        </div>
+
+        <div class="color-picker" title="The color of the eclipse when the animation has finished">
+          <input
+            class="color-picker__input"
+            type="color"
+            id="color-eclipse-end"
+            name="color-eclipse-end"
+            value="#FFCA14"
+          />
+
+          <label class="color-picker__label" for="color-eclipse-end">End</label>
+        </div>
+      </div>
+
+      <div class="control-bar__divider"></div>
+
+      <div class="control-bar__column">
+        <span>
+          <label class="field__label">Background:</label>
+        </span>
+
+        <div class="color-picker" title="The color of the background at the start of the animation">
+          <input
+            class="color-picker__input"
+            type="color"
+            id="color-bg-start"
+            name="color-bg-start"
+            value="#FFFFFF"
+          />
+
+          <label class="color-picker__label" for="color-bg-start">Start</label>
+        </div>
+
+        <div class="color-picker" title="The color of the background at the end of the animation">
+          <input
+            class="color-picker__input"
+            type="color"
+            id="color-bg-end"
+            name="color-bg-end"
+            value="#FFFFFF"
+          />
+
+          <label class="color-picker__label" for="color-bg-end">End</label>
+        </div>
+      </div>
+
+      <div class="control-bar__divider"></div>
+
+      <div class="control-bar__column">
+        <span>
+          <label class="field__label">LOOΠΔ:</label>
+        </span>
+
+        <div class="color-picker" title="The color of the LOOΠΔ text at the start of the animation">
+          <input
+            class="color-picker__input"
+            type="color"
+            id="color-loona-start"
+            name="color-loona-start"
+            value="#000000"
+          />
+
+          <label class="color-picker__label" for="color-loona-start">Start</label>
+        </div>
+
+        <div class="color-picker" title="The color of the LOOΠΔ text when it transitions to a single line">
+          <input
+            class="color-picker__input"
+            type="color"
+            id="color-loona-end"
+            name="color-loona-end"
+            value="#000000"
+          />
+
+          <label class="color-picker__label" for="color-loona-start">End</label>
+        </div>
+      </div>
+
+      <div class="control-bar__divider"></div>
+
+      <div class="control-bar__column">
+        <span>
+          <label class="field__label">&ldquo;/&rdquo;:</label>
+        </span>
+
+        <div class="color-picker" title="The color of the &ldquo;/&rdquo; at the start of the animation">
+          <input
+            class="color-picker__input"
+            type="color"
+            id="color-slash-start"
+            name="color-slash-start"
+            value="#BC1862"
+          />
+
+          <label class="color-picker__label" for="color-slash-start">Start</label>
+        </div>
+
+        <div class="color-picker" title="The color of the &ldquo;/&rdquo; text when it transitions to a single line">
+          <input
+            class="color-picker__input"
+            type="color"
+            id="color-slash-end"
+            name="color-slash-end"
+            value="#BC1862"
+          />
+
+          <label class="color-picker__label" for="color-slash-end">End</label>
+        </div>
+      </div>
+
+      <div class="control-bar__buttons">
+        <div class="control-bar__start">
+          <button class="button button--icon" type="button" id="start" aria-label="Start" title="Start">
+            <%= require('../../assets/start.svg') %>
+          </button>
+        </div>
+
+        <div class="control-bar__github">
+          <a class="button button--icon" id="github" aria-label="View on GitHub" title="View on GitHub" href="https://github.com/michaelbull/loona-intro-generator" target="_blank">
+            <%= require('../../assets/github.svg') %>
+          </a>
+        </div>
+      </div>
+    </form>
+
+    <div class="container">
+      <%= require('../../assets/logo-eclipse.svg') %>
+    </div>
+  </body>
+</html>

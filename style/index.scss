@@ -10,9 +10,10 @@
 @use 'base/typography';
 
 // 4. Layout
-@use 'layout/main';
 
 // 5. Components
+@use 'components/animation-selector';
+@use 'components/animation-choice';
 @use 'components/button';
 @use 'components/field';
 @use 'components/checkbox';
@@ -23,3 +24,5 @@
 @use 'components/logo';
 
 // 6. Pages
+@use 'pages/index';
+@use 'pages/eclipse';

@@ -1,6 +1,6 @@
 <h1 align="center">이달의 소녀 / LOOΠΔ<br />Intro Generator</h1>
 <p align="center">
-  <a href="https://michaelbull.github.io/loona-intro-generator/"><img src="https://github.com/michaelbull/loona-intro-generator/raw/master/assets/preview.gif" alt="Preview" /></a>
+  <a href="https://michaelbull.github.io/loona-intro-generator/"><img src="https://github.com/michaelbull/loona-intro-generator/raw/master/assets/preview-eclipse.gif" alt="Preview" /></a>
 </p>
 <br />
 
