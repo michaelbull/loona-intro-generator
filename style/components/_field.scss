@@ -1,3 +1,6 @@
+@use '../abstracts/font-stacks';
+@use '../abstracts/material-colors';
+
 .field {
   display: flex;
   flex: 1;
@@ -27,13 +30,13 @@
 
   width: 100%;
 
-  font-family: $sans-serif-font-stack;
+  font-family: font-stacks.$sans-serif;
 
-  background: $grey-50;
-  border: 2px solid $grey-400;
+  background: material-colors.$grey-50;
+  border: 2px solid material-colors.$grey-400;
 
   &:focus {
     outline: 0;
-    border-color: $blue-400;
+    border-color: material-colors.$blue-400;
   }
 }

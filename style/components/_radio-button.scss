@@ -1,3 +1,5 @@
+@use '../abstracts/material-colors';
+
 .radio-button {
   display: flex;
   align-items: flex-start;
@@ -37,7 +39,7 @@
   }
 
   &::before {
-    border: 0.125em solid $grey-400;
+    border: 0.125em solid material-colors.$grey-400;
   }
 
   &::after {
@@ -54,24 +56,24 @@
   &:focus,
   &:active {
     &::before {
-      border-color: $blue-200;
+      border-color: material-colors.$blue-200;
     }
   }
 
   &:checked {
     &::before {
-      border-color: $blue-400;
+      border-color: material-colors.$blue-400;
     }
 
     &::after {
-      background-color: $blue-400;
+      background-color: material-colors.$blue-400;
       transform: scale(0.5);
     }
 
     &:focus,
     &:active {
       &::before {
-        border-color: $blue-200;
+        border-color: material-colors.$blue-200;
       }
     }
   }

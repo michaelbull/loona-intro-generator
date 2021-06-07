@@ -1,3 +1,5 @@
+@use '../abstracts/material-colors';
+
 .checkbox {
   display: flex;
   align-items: flex-start;
@@ -25,7 +27,7 @@
   min-width: 1em;
   min-height: 1em;
 
-  border: 0.125em solid $grey-400;
+  border: 0.125em solid material-colors.$grey-400;
   border-radius: 0;
 
   &::after {
@@ -49,12 +51,12 @@
 
   &:focus,
   &:active {
-    border-color: $blue-200;
+    border-color: material-colors.$blue-200;
   }
 
   &:checked {
-    background: $blue-400;
-    border-color: $blue-400;
+    background: material-colors.$blue-400;
+    border-color: material-colors.$blue-400;
 
     &::after {
       transform: scale(1) rotate(45deg);
@@ -62,7 +64,7 @@
 
     &:focus,
     &:active {
-      border-color: $blue-200;
+      border-color: material-colors.$blue-200;
     }
   }
 }

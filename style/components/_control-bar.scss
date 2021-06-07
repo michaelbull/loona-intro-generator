@@ -1,10 +1,12 @@
+@use '../abstracts/material-colors';
+
 .control-bar {
   flex: 0 0;
   display: flex;
   flex-wrap: wrap;
-  background-color: $grey-100;
+  background-color: material-colors.$grey-100;
 
-  box-shadow: inset 0 -1px 0 $grey-400;
+  box-shadow: inset 0 -1px 0 material-colors.$grey-400;
 
   > * {
     margin: 0.5rem;
@@ -34,7 +36,7 @@
 
     width: 1px;
     height: 100%;
-    background-color: $grey-400;
+    background-color: material-colors.$grey-400;
   }
 }
 

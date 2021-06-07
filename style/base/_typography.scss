@@ -1,13 +1,16 @@
+@use "../abstracts/font-stacks";
+@use "../abstracts/material-colors";
+
 html {
   font-size: 16px;
 }
 
 body {
   font-size: 0.9375rem;
-  font-family: $sans-serif-font-stack;
+  font-family: font-stacks.$sans-serif;
   line-height: 1.65;
 
-  color: $grey-800;
+  color: material-colors.$grey-800;
   background-color: white;
 
   word-break: break-word; // Non standard for WebKit

@@ -1,28 +1,25 @@
 // http://sass-guidelin.es/#the-7-1-pattern
 
 // 1. Abstracts
-@import 'abstracts/variables';
-@import 'abstracts/mixins';
 
 // 2. Vendors
-@import 'vendors/material-colors';
 
 // 3. Base
-@import 'base/reset';
-@import 'base/fonts';
-@import 'base/typography';
+@use 'base/reset';
+@use 'base/fonts';
+@use 'base/typography';
 
 // 4. Layout
-@import 'layout/main';
+@use 'layout/main';
 
 // 5. Components
-@import 'components/button';
-@import 'components/field';
-@import 'components/checkbox';
-@import 'components/radio-button';
-@import 'components/color-picker';
-@import 'components/container';
-@import 'components/control-bar';
-@import 'components/logo';
+@use 'components/button';
+@use 'components/field';
+@use 'components/checkbox';
+@use 'components/radio-button';
+@use 'components/color-picker';
+@use 'components/container';
+@use 'components/control-bar';
+@use 'components/logo';
 
 // 6. Pages
