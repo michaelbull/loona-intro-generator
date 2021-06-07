@@ -1,5 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 
 module.exports = {
     entry: './src/index.ts',
@@ -16,7 +17,7 @@ module.exports = {
             {
                 test: /\.tsx?$/,
                 use: 'ts-loader',
-                exclude: /node_modules/,
+                exclude: /node_modules/
             },
             {
                 test: /\.svg/,
@@ -36,6 +37,10 @@ module.exports = {
         new HtmlWebpackPlugin({
             inject: 'head',
             hash: true
+        }),
+        new FaviconsWebpackPlugin({
+            logo: path.resolve(__dirname, 'assets', 'favicon.png'),
+            prefix: 'favicon/[contenthash:20]/'
         })
     ],
 
