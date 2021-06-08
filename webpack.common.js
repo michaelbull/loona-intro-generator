@@ -6,8 +6,9 @@ module.exports = {
     entry: {
         style: './style/index.ts',
         index: './src/index.ts',
-        eclipse: './src/eclipse/index.ts'
+        loona: './src/loona/index.ts'
     },
+
     target: 'es5',
 
     output: {
@@ -50,9 +51,9 @@ module.exports = {
             hash: true
         }),
         new HtmlWebpackPlugin({
-            filename: 'eclipse.html',
-            template: 'src/eclipse/index.ejs',
-            chunks: ['style', 'eclipse'],
+            filename: 'loona.html',
+            template: 'src/loona/index.ejs',
+            chunks: ['style', 'loona'],
             inject: 'head',
             hash: true
         }),

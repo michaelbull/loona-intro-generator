@@ -21,8 +21,8 @@
 @use 'components/color-picker';
 @use 'components/container';
 @use 'components/control-bar';
-@use 'components/logo';
+@use 'components/loona';
 
 // 6. Pages
-@use 'pages/index';
-@use 'pages/eclipse';
+@use 'pages/index-page';
+@use 'pages/loona-page';

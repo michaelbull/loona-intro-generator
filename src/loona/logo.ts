@@ -1,14 +1,14 @@
 const LOGO_ELEMENT_CLASSNAMES = [
-    'logo',
-    'logo__l',
-    'logo__o1',
-    'logo__o2',
-    'logo__n',
-    'logo__a',
-    'logo__slash',
-    'logo__circle',
-    'logo__crescent',
-    'logo__glyphs'
+    'loona',
+    'loona__l',
+    'loona__o1',
+    'loona__o2',
+    'loona__n',
+    'loona__a',
+    'loona__slash',
+    'loona__circle',
+    'loona__crescent',
+    'loona__glyphs'
 ];
 
 export function logoElements(): SVGElement[] {

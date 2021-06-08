@@ -1,7 +1,7 @@
 @use '../abstracts/member-colors';
 @use '../abstracts/timing-functions';
 
-.logo {
+.loona {
   width: 100%;
   height: 100%;
 
@@ -9,108 +9,108 @@
   max-height: 100%;
 }
 
-.logo--animating {
-  animation-name: logo-animation;
+.loona--animating {
+  animation-name: loona-logo-animation;
   animation-fill-mode: forwards;
   will-change: background-color;
 }
 
-.logo__l,
-.logo__o1,
-.logo__o2,
-.logo__n,
-.logo__a,
-.logo__slash {
+.loona__l,
+.loona__o1,
+.loona__o2,
+.loona__n,
+.loona__a,
+.loona__slash {
   opacity: 0;
 }
 
-.logo__o1--animating {
-  animation-name: o1-animation;
+.loona__o1--animating {
+  animation-name: loona-o1-animation;
   animation-fill-mode: forwards;
   transform-box: fill-box;
   transform-origin: center;
   will-change: opacity, stroke, transform, animation-timing-function;
 }
 
-.logo__n--animating {
-  animation-name: n-animation;
+.loona__n--animating {
+  animation-name: loona-n-animation;
   animation-fill-mode: forwards;
   transform-box: fill-box;
   transform-origin: left bottom;
   will-change: opacity, stroke, transform, animation-timing-function;
 }
 
-.logo__o2--animating {
-  animation-name: o2-animation;
+.loona__o2--animating {
+  animation-name: loona-o2-animation;
   animation-fill-mode: forwards;
   transform-box: fill-box;
   transform-origin: center;
   will-change: opacity, stroke, transform, animation-timing-function;
 }
 
-.logo__l--animating {
-  animation-name: l-animation;
+.loona__l--animating {
+  animation-name: loona-l-animation;
   animation-fill-mode: forwards;
   transform-box: fill-box;
   transform-origin: center;
   will-change: opacity, stroke, transform, animation-timing-function;
 }
 
-.logo__a--animating {
-  animation-name: a-animation;
+.loona__a--animating {
+  animation-name: loona-a-animation;
   animation-fill-mode: forwards;
   transform-box: fill-box;
   transform-origin: center;
   will-change: opacity, stroke, transform, animation-timing-function;
 }
 
-.logo__slash--animating {
-  animation-name: slash-animation;
+.loona__slash--animating {
+  animation-name: loona-slash-animation;
   animation-fill-mode: forwards;
   transform-box: fill-box;
   transform-origin: center;
   will-change: opacity, stroke, transform, animation-timing-function;
 }
 
-.logo__circle--animating {
-  animation-name: circle-animation;
+.loona__circle--animating {
+  animation-name: loona-circle-animation;
   animation-fill-mode: forwards;
   transform-box: fill-box;
   transform-origin: center;
   will-change: fill;
 }
 
-.logo__circle--animating.logo__circle--ot12 {
-  animation-name: circle-animation-ot12;
+.loona__circle--animating.loona__circle--ot12 {
+  animation-name: loona-circle-animation-ot12;
 }
 
-.logo__circle--animating.logo__circle--ot12-reverse {
-  animation-name: circle-animation-ot12-reverse;
+.loona__circle--animating.loona__circle--ot12-reverse {
+  animation-name: loona-circle-animation-ot12-reverse;
 }
 
-.logo__crescent--animating {
+.loona__crescent--animating {
   animation-fill-mode: forwards;
   transform-box: fill-box;
   transform-origin: center;
   will-change: transform, animation-timing-function;
 }
 
-.logo__crescent--ltr.logo__crescent--animating {
-  animation-name: crescent-animation-ltr;
+.loona__crescent--ltr.loona__crescent--animating {
+  animation-name: loona-crescent-animation-ltr;
 }
 
-.logo__crescent--rtl.logo__crescent--animating {
-  animation-name: crescent-animation-rtl;
+.loona__crescent--rtl.loona__crescent--animating {
+  animation-name: loona-crescent-animation-rtl;
 }
 
-.logo__glyphs--animating {
-  animation-name: glyphs-animation;
+.loona__glyphs--animating {
+  animation-name: loona-glyphs-animation;
   animation-fill-mode: forwards;
   transform-box: view-box;
   transform-origin: center;
 }
 
-@keyframes logo-animation {
+@keyframes loona-logo-animation {
   0% {
     background-color: var(--color-bg-start);
   }
@@ -128,7 +128,7 @@
   }
 }
 
-@keyframes o1-animation {
+@keyframes loona-o1-animation {
   0% {
     opacity: 0;
     stroke: var(--color-loona-start);
@@ -179,7 +179,7 @@
   }
 }
 
-@keyframes n-animation {
+@keyframes loona-n-animation {
   0% {
     opacity: 0;
     stroke: var(--color-loona-start);
@@ -230,7 +230,7 @@
   }
 }
 
-@keyframes o2-animation {
+@keyframes loona-o2-animation {
   0% {
     opacity: 0;
     stroke: var(--color-loona-start);
@@ -281,7 +281,7 @@
   }
 }
 
-@keyframes l-animation {
+@keyframes loona-l-animation {
   0% {
     opacity: 0;
     stroke: var(--color-loona-start);
@@ -332,7 +332,7 @@
   }
 }
 
-@keyframes a-animation {
+@keyframes loona-a-animation {
   0% {
     opacity: 0;
     stroke: var(--color-loona-start);
@@ -383,7 +383,7 @@
   }
 }
 
-@keyframes slash-animation {
+@keyframes loona-slash-animation {
   0% {
     opacity: 0;
     stroke: var(--color-slash-start);
@@ -434,7 +434,7 @@
   }
 }
 
-@keyframes circle-animation {
+@keyframes loona-circle-animation {
   0% {
     fill: none;
   }
@@ -452,7 +452,7 @@
   }
 }
 
-@keyframes circle-animation-ot12 {
+@keyframes loona-circle-animation-ot12 {
   0% {
     fill: none;
   }
@@ -562,7 +562,7 @@
   }
 }
 
-@keyframes circle-animation-ot12-reverse {
+@keyframes loona-circle-animation-ot12-reverse {
   0% {
     fill: none;
   }
@@ -672,7 +672,7 @@
   }
 }
 
-@keyframes crescent-animation-rtl {
+@keyframes loona-crescent-animation-rtl {
   0% {
     transform: translate3d(1700px, 0, 0);
   }
@@ -691,7 +691,7 @@
   }
 }
 
-@keyframes crescent-animation-ltr {
+@keyframes loona-crescent-animation-ltr {
   0% {
     transform: translate3d(-1700px, 0, 0);
   }
@@ -710,7 +710,7 @@
   }
 }
 
-@keyframes glyphs-animation {
+@keyframes loona-glyphs-animation {
   0% {
     transform: none;
   }
