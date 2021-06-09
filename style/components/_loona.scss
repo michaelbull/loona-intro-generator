@@ -14,6 +14,7 @@ $_crescent-timing-function: cubic-bezier(0, 0.5, 0.5, 1);
 .loona--animating {
   animation-name: loona-logo-animation;
   animation-fill-mode: forwards;
+  animation-timing-function: steps(1, end);
   will-change: background-color;
 }
 
@@ -84,10 +85,12 @@ $_crescent-timing-function: cubic-bezier(0, 0.5, 0.5, 1);
 
 .loona__circle--animating.loona__circle--ot12 {
   animation-name: loona-circle-animation-ot12;
+  animation-timing-function: steps(1, end);
 }
 
 .loona__circle--animating.loona__circle--ot12-reverse {
   animation-name: loona-circle-animation-ot12-reverse;
+  animation-timing-function: steps(1, end);
 }
 
 .loona__crescent--animating {
@@ -114,10 +117,6 @@ $_crescent-timing-function: cubic-bezier(0, 0.5, 0.5, 1);
 
 @keyframes loona-logo-animation {
   0% {
-    background-color: var(--color-bg-start);
-  }
-
-  56% {
     background-color: var(--color-bg-start);
   }
 
