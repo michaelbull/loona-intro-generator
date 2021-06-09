@@ -307,12 +307,12 @@ $_logo-to-title-scale: math.div($_title-font-size, $_logo-font-size);
     stroke-dashoffset: 200;
   }
 
-  2% {
+  1% {
     stroke-dasharray: 200;
     stroke-dashoffset: 200;
   }
 
-  4% {
+  3% {
     stroke-dashoffset: 0;
   }
 
