@@ -1,9 +1,10 @@
 @use 'sass:math';
-@use '../abstracts/timing-functions';
 
-$_title-font-size: 86;
+$_name-font-size: 86;
 $_logo-font-size: 148;
-$_logo-to-title-scale: math.div($_title-font-size, $_logo-font-size);
+$_logo-to-title-scale: math.div($_name-font-size, $_logo-font-size);
+$_name-timing-function: cubic-bezier(1, 0, 0.4, 1);
+$_logo-timing-function: cubic-bezier(0, 0.5, 0.5, 1);
 
 .yyxy {
   width: 100%;
@@ -118,7 +119,7 @@ $_logo-to-title-scale: math.div($_title-font-size, $_logo-font-size);
 
   .yyxy__glyph--animating {
     animation-fill-mode: forwards;
-    animation-timing-function: timing-functions.$slow-in-fast-out;
+    animation-timing-function: $_name-timing-function;
   }
 
   .yyxy__glyph--animating.yyxy__glyph--lt {
@@ -201,7 +202,7 @@ $_logo-to-title-scale: math.div($_title-font-size, $_logo-font-size);
 .yyxy__logo {
   .yyxy__glyph--animating {
     animation-fill-mode: forwards;
-    animation-timing-function: timing-functions.$fast-in-slow-out;
+    animation-timing-function: $_logo-timing-function;
   }
 
   .yyxy__glyph--animating:nth-of-type(1) {

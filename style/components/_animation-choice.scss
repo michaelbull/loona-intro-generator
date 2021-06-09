@@ -1,7 +1,6 @@
 @use 'sass:math';
 @use '../abstracts/material-colors';
 @use '../abstracts/material-elevation';
-@use '../abstracts/timing-functions';
 
 .animation-choice {
   @include material-elevation.elevation(2);
@@ -25,7 +24,7 @@
 
   transition-property: box-shadow, border-color;
   transition-duration: 280ms;
-  transition-timing-function: timing-functions.$fast-out-slow-in;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
   &:focus {

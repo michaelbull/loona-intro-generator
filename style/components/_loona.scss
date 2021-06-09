@@ -1,5 +1,7 @@
 @use '../abstracts/member-colors';
-@use '../abstracts/timing-functions';
+
+$_text-timing-function: cubic-bezier(0.8, 0, 1, 1);
+$_crescent-timing-function: cubic-bezier(0, 0.5, 0.5, 1);
 
 .loona {
   width: 100%;
@@ -153,7 +155,7 @@
 
   42% {
     transform: none;
-    animation-timing-function: timing-functions.$slow-in-fast-out;
+    animation-timing-function: $_text-timing-function;
   }
 
   56% {
@@ -204,7 +206,7 @@
 
   42% {
     transform: none;
-    animation-timing-function: timing-functions.$slow-in-fast-out;
+    animation-timing-function: $_text-timing-function;
   }
 
   56% {
@@ -255,7 +257,7 @@
 
   42% {
     transform: none;
-    animation-timing-function: timing-functions.$slow-in-fast-out;
+    animation-timing-function: $_text-timing-function;
   }
 
   56% {
@@ -306,7 +308,7 @@
 
   42% {
     transform: none;
-    animation-timing-function: timing-functions.$slow-in-fast-out;
+    animation-timing-function: $_text-timing-function;
   }
 
   56% {
@@ -357,7 +359,7 @@
 
   42% {
     transform: none;
-    animation-timing-function: timing-functions.$slow-in-fast-out;
+    animation-timing-function: $_text-timing-function;
   }
 
   56% {
@@ -408,7 +410,7 @@
 
   42% {
     transform: none;
-    animation-timing-function: timing-functions.$slow-in-fast-out;
+    animation-timing-function: $_text-timing-function;
   }
 
   56% {
@@ -679,7 +681,7 @@
 
   57% {
     transform: translate3d(1700px, 0, 0);
-    animation-timing-function: timing-functions.$fast-in-slow-out;
+    animation-timing-function: $_crescent-timing-function;
   }
 
   82% {
@@ -698,7 +700,7 @@
 
   57% {
     transform: translate3d(-1700px, 0, 0);
-    animation-timing-function: timing-functions.$fast-in-slow-out;
+    animation-timing-function: $_crescent-timing-function;
   }
 
   82% {
