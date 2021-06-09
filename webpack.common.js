@@ -6,7 +6,8 @@ module.exports = {
     entry: {
         style: './style/index.ts',
         index: './src/index.ts',
-        loona: './src/loona/index.ts'
+        loona: './src/loona/index.ts',
+        yyxy: './src/yyxy/index.ts',
     },
 
     target: 'es5',
@@ -54,6 +55,13 @@ module.exports = {
             filename: 'loona.html',
             template: 'src/loona/index.ejs',
             chunks: ['style', 'loona'],
+            inject: 'head',
+            hash: true
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'yyxy.html',
+            template: 'src/yyxy/index.ejs',
+            chunks: ['style', 'yyxy'],
             inject: 'head',
             hash: true
         }),

@@ -1,11 +1,24 @@
+import { svgElements } from '../svg-elements';
 import { currentColorPalette } from './color-palette';
 import { currentDirection } from './direction';
 import { DOM } from './dom';
-import { logoElements } from './logo';
+
+const LOGO_ELEMENT_CLASSNAMES = [
+    'loona',
+    'loona__l',
+    'loona__o1',
+    'loona__o2',
+    'loona__n',
+    'loona__a',
+    'loona__slash',
+    'loona__circle',
+    'loona__crescent',
+    'loona__glyphs'
+];
 
 export function animate(dom: DOM): void {
     let duration = dom.durationElement.value;
-    let elements = logoElements();
+    let elements = svgElements(LOGO_ELEMENT_CLASSNAMES);
     let direction = currentDirection(dom);
     let colors = currentColorPalette(dom);
 

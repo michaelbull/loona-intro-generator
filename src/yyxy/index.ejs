@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+  <head>
+    <title>LOONA Intro Generator</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="keywords" content="loona loonatheworld LOOΠΔ ㅇㄷㅇㅅㄴ girl of the month 이달의 소녀 animated svg css intro introduction animation generator" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Michael Bull <https://www.michael-bull.com>" />
+  </head>
+
+  <body class="loona-page">
+    <form class="control-bar">
+      <div class="control-bar__duration">
+        <div class="field">
+          <label class="field__label" for="duration">Duration:</label>
+
+          <input
+            class="field__input"
+            type="text"
+            id="duration"
+            name="duration"
+            value="6.5s"
+            placeholder="Duration (e.g. 20s, 4000ms)..."
+          />
+        </div>
+      </div>
+
+      <div class="control-bar__width">
+        <div class="field" title="The width of the outer branch lines">
+          <label class="field__label" for="width-branch">Branch width:</label>
+
+          <input
+            class="field__input"
+            type="number"
+            id="width-branch"
+            name="width-branch"
+            value="4"
+          />
+        </div>
+      </div>
+
+      <div class="control-bar__width">
+        <div class="field" title="The width of the connecting bond lines">
+          <label class="field__label" for="width-bond">Bond width:</label>
+
+          <input
+            class="field__input"
+            type="number"
+            id="width-bond"
+            name="width-bond"
+            value="3"
+          />
+        </div>
+      </div>
+
+      <div class="control-bar__column">
+        <span>
+          <label class="field__label">Colors:</label>
+        </span>
+
+        <div class="color-picker" title="The background color">
+          <input
+            class="color-picker__input"
+            type="color"
+            id="color-background"
+            name="color-background"
+            value="#FFFFFF"
+          />
+
+          <label class="color-picker__label" for="color-background">Background</label>
+        </div>
+
+        <div class="color-picker" title="The color of the 'yyxy' atoms">
+          <input
+            class="color-picker__input"
+            type="color"
+            id="color-atoms"
+            name="color-atoms"
+            value="#211F20"
+          />
+
+          <label class="color-picker__label" for="color-atoms">Atoms</label>
+        </div>
+      </div>
+
+      <div class="control-bar__column">
+        <span>
+          <label class="field__label">&nbsp;</label>
+        </span>
+
+        <div class="color-picker" title="The color of the outer branches">
+          <input
+            class="color-picker__input"
+            type="color"
+            id="color-branches"
+            name="color-branches"
+            value="#211F20"
+          />
+
+          <label class="color-picker__label" for="color-branches">Branches</label>
+        </div>
+
+        <div class="color-picker" title="The color of the connecting bonds">
+          <input
+            class="color-picker__input"
+            type="color"
+            id="color-bonds"
+            name="color-bonds"
+            value="#211F20"
+          />
+
+          <label class="color-picker__label" for="color-branches">Bonds</label>
+        </div>
+      </div>
+
+      <div class="control-bar__column">
+        <span>
+          <label class="field__label">&nbsp;</label>
+        </span>
+
+        <div class="color-picker" title="The color of the 'youth youth by young' name">
+          <input
+            class="color-picker__input"
+            type="color"
+            id="color-name"
+            name="color-name"
+            value="#211F20"
+          />
+
+          <label class="color-picker__label" for="color-name">Name</label>
+        </div>
+
+        <div class="color-picker" title="The color of the 'yyxy' logo">
+          <input
+            class="color-picker__input"
+            type="color"
+            id="color-logo"
+            name="color-logo"
+            value="#211F20"
+          />
+
+          <label class="color-picker__label" for="color-logo">Logo</label>
+        </div>
+      </div>
+
+      <div class="control-bar__buttons">
+        <div class="control-bar__start">
+          <button class="button button--icon" type="button" id="start" aria-label="Start" title="Start">
+            <%= require('../../assets/start.svg') %>
+          </button>
+        </div>
+
+        <div class="control-bar__github">
+          <a class="button button--icon" id="github" aria-label="View on GitHub" title="View on GitHub" href="https://github.com/michaelbull/loona-intro-generator" target="_blank">
+            <%= require('../../assets/github.svg') %>
+          </a>
+        </div>
+      </div>
+    </form>
+
+    <div class="container">
+      <%= require('../../assets/logo-yyxy.svg') %>
+    </div>
+  </body>
+</html>
