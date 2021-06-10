@@ -3,7 +3,7 @@ import { DOM } from './dom';
 export const DEFAULT_BACKGROUND_COLOR = '#FFFFFF';
 export const DEFAULT_ECLIPSE_COLOR = '#FFCB07';
 export const DEFAULT_LOONA_COLOR = '#000000';
-export const DEFAULT_SLASH_COLOR = '#BC1862';
+export const DEFAULT_SLASH_COLOR = '#FF32B0';
 
 export interface ColorPalette {
     readonly backgroundStart: string;

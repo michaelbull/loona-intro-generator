@@ -1,22 +1,20 @@
-<svg class="loona" viewBox="0 0 1900 1900" xmlns="http://www.w3.org/2000/svg">
+<svg class="loona" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1900 1900">
   <defs>
     <mask id="crescent">
-      <rect width="100%" height="100%" fill="black" />
-      <circle cx="950" cy="950" r="850" fill="white" />
-      <circle class="loona__crescent" cx="950" cy="950" r="852" fill="black" />
+      <rect width="100%" height="100%" />
+      <circle cx="950" cy="950" r="850" fill="#fff" />
+      <circle class="loona__crescent" cx="950" cy="950" r="782" />
     </mask>
   </defs>
 
-  <circle class="loona__circle" cx="950" cy="950" r="850" fill="none" mask="url(#crescent)" />
+  <circle class="loona__circle" cx="950" cy="950" r="780" fill="none" mask="url(#crescent)" />
 
-  <g class="loona__glyphs" fill="none" stroke-width="5">
-    <g stroke="#000000">
-      <path class="loona__l" d="M1001 1150v200h200" />
-      <path class="loona__o1" d="M701 650a100 100 0 10200 0 100 100 0 00-200 0" />
-      <path class="loona__o2" d="M701 950a100 100 0 10200 0 100 100 0 00-200 0" />
-      <path class="loona__n" d="M1201 550h-200v200h200" />
-      <path class="loona__a" d="M801 1150l100 200H701z" />
-    </g>
-    <path class="loona__slash" d="M1201 850l-200 200" stroke="#BC1862" />
+  <g class="loona__glyphs">
+    <path class="loona__o1" d="M797 535a100 100 0 100 200 100 100 0 000-200zm0 6a94 94 0 110 188 94 94 0 010-188z" />
+    <path class="loona__n" d="M1001 535a3 3 0 00-3 3v195a3 3 0 003 3h193a3 3 0 003-3 3 3 0 00-3-3h-190V541h190a3 3 0 003-3 3 3 0 00-3-3h-193z" />
+    <path class="loona__o2" d="M797 822a100 100 0 100 200 100 100 0 000-200zm0 6a94 94 0 110 188 94 94 0 010-188z" />
+    <path class="loona__slash" fill="#FF32B0" d="M1194 824a3 3 0 00-2 0l-194 193a3 3 0 000 4 3 3 0 004 0l194-193a3 3 0 000-4 3 3 0 00-2-1z" />
+    <path class="loona__a" d="M795 1113l-3 1-96 190c-1 2 0 5 3 5h192c3 0 4-3 3-5l-96-190-3-1zm0 9l92 181H703l92-181z" />
+    <path class="loona__l" d="M1001 1111a3 3 0 00-3 3v193a3 3 0 003 3h193a3 3 0 003-3 3 3 0 00-3-3h-190v-190a3 3 0 00-3-3z" />
   </g>
 </svg>

@@ -11,9 +11,21 @@ $_crescent-timing-function: cubic-bezier(0, 0.5, 0.5, 1);
   max-height: 100%;
 }
 
+.loona--animating,
+.loona__o1--animating,
+.loona__n--animating,
+.loona__o2--animating,
+.loona__slash--animating,
+.loona__a--animating,
+.loona__l--animating,
+.loona__circle--animating,
+.loona__crescent--animating,
+.loona__glyphs--animating {
+  animation-fill-mode: forwards;
+}
+
 .loona--animating {
   animation-name: loona-logo-animation;
-  animation-fill-mode: forwards;
   animation-timing-function: steps(1, end);
   will-change: background-color;
 }
@@ -29,7 +41,6 @@ $_crescent-timing-function: cubic-bezier(0, 0.5, 0.5, 1);
 
 .loona__o1--animating {
   animation-name: loona-o1-animation;
-  animation-fill-mode: forwards;
   transform-box: fill-box;
   transform-origin: center;
   will-change: opacity, stroke, transform, animation-timing-function;
@@ -37,7 +48,6 @@ $_crescent-timing-function: cubic-bezier(0, 0.5, 0.5, 1);
 
 .loona__n--animating {
   animation-name: loona-n-animation;
-  animation-fill-mode: forwards;
   transform-box: fill-box;
   transform-origin: left bottom;
   will-change: opacity, stroke, transform, animation-timing-function;
@@ -45,7 +55,6 @@ $_crescent-timing-function: cubic-bezier(0, 0.5, 0.5, 1);
 
 .loona__o2--animating {
   animation-name: loona-o2-animation;
-  animation-fill-mode: forwards;
   transform-box: fill-box;
   transform-origin: center;
   will-change: opacity, stroke, transform, animation-timing-function;
@@ -53,7 +62,6 @@ $_crescent-timing-function: cubic-bezier(0, 0.5, 0.5, 1);
 
 .loona__l--animating {
   animation-name: loona-l-animation;
-  animation-fill-mode: forwards;
   transform-box: fill-box;
   transform-origin: center;
   will-change: opacity, stroke, transform, animation-timing-function;
@@ -61,7 +69,6 @@ $_crescent-timing-function: cubic-bezier(0, 0.5, 0.5, 1);
 
 .loona__a--animating {
   animation-name: loona-a-animation;
-  animation-fill-mode: forwards;
   transform-box: fill-box;
   transform-origin: center;
   will-change: opacity, stroke, transform, animation-timing-function;
@@ -69,7 +76,6 @@ $_crescent-timing-function: cubic-bezier(0, 0.5, 0.5, 1);
 
 .loona__slash--animating {
   animation-name: loona-slash-animation;
-  animation-fill-mode: forwards;
   transform-box: fill-box;
   transform-origin: center;
   will-change: opacity, stroke, transform, animation-timing-function;
@@ -77,7 +83,6 @@ $_crescent-timing-function: cubic-bezier(0, 0.5, 0.5, 1);
 
 .loona__circle--animating {
   animation-name: loona-circle-animation;
-  animation-fill-mode: forwards;
   transform-box: fill-box;
   transform-origin: center;
   will-change: fill;
@@ -94,7 +99,6 @@ $_crescent-timing-function: cubic-bezier(0, 0.5, 0.5, 1);
 }
 
 .loona__crescent--animating {
-  animation-fill-mode: forwards;
   transform-box: fill-box;
   transform-origin: center;
   will-change: transform, animation-timing-function;
@@ -110,7 +114,6 @@ $_crescent-timing-function: cubic-bezier(0, 0.5, 0.5, 1);
 
 .loona__glyphs--animating {
   animation-name: loona-glyphs-animation;
-  animation-fill-mode: forwards;
   transform-box: view-box;
   transform-origin: center;
 }
@@ -132,7 +135,7 @@ $_crescent-timing-function: cubic-bezier(0, 0.5, 0.5, 1);
 @keyframes loona-o1-animation {
   0% {
     opacity: 0;
-    stroke: var(--color-loona-start);
+    fill: var(--color-loona-start);
   }
 
   1% {
@@ -158,32 +161,33 @@ $_crescent-timing-function: cubic-bezier(0, 0.5, 0.5, 1);
   }
 
   56% {
-    stroke: var(--color-loona-start);
+    fill: var(--color-loona-start);
   }
 
   57% {
-    stroke: var(--color-loona-end);
+    fill: var(--color-loona-end);
   }
 
   60% {
-    transform: translate3d(18%, 153%, 0);
+    transform: translate3d(19%, 147%, 0);
   }
 
   99% {
     opacity: 1;
+    animation-timing-function: steps(1, end);
   }
 
   100% {
     opacity: 0;
-    stroke: var(--color-loona-end);
-    transform: translate3d(18%, 153%, 0);
+    fill: var(--color-loona-end);
+    transform: translate3d(19%, 147%, 0);
   }
 }
 
 @keyframes loona-n-animation {
   0% {
     opacity: 0;
-    stroke: var(--color-loona-start);
+    fill: var(--color-loona-start);
   }
 
   5% {
@@ -209,32 +213,33 @@ $_crescent-timing-function: cubic-bezier(0, 0.5, 0.5, 1);
   }
 
   56% {
-    stroke: var(--color-loona-start);
+    fill: var(--color-loona-start);
   }
 
   57% {
-    stroke: var(--color-loona-end);
+    fill: var(--color-loona-end);
   }
 
   60% {
-    transform: rotate3d(0, 0, 1, 90deg) translate3d(52%, 10%, 0);
+    transform: rotate3d(0, 0, 1, 90deg) translate3d(45%, 16%, 0);
   }
 
   99% {
     opacity: 1;
+    animation-timing-function: steps(1, end);
   }
 
   100% {
     opacity: 0;
-    stroke: var(--color-loona-end);
-    transform: rotate3d(0, 0, 1, 90deg) translate3d(52%, 10%, 0);
+    fill: var(--color-loona-end);
+    transform: rotate3d(0, 0, 1, 90deg) translate3d(45%, 16%, 0);
   }
 }
 
 @keyframes loona-o2-animation {
   0% {
     opacity: 0;
-    stroke: var(--color-loona-start);
+    fill: var(--color-loona-start);
   }
 
   7% {
@@ -260,32 +265,33 @@ $_crescent-timing-function: cubic-bezier(0, 0.5, 0.5, 1);
   }
 
   56% {
-    stroke: var(--color-loona-start);
+    fill: var(--color-loona-start);
   }
 
   57% {
-    stroke: var(--color-loona-end);
+    fill: var(--color-loona-end);
   }
 
   60% {
-    transform: translate3d(-100%, 3%, 0);
+    transform: translate3d(-95%, 3%, 0);
   }
 
   99% {
     opacity: 1;
+    animation-timing-function: steps(1, end);
   }
 
   100% {
     opacity: 0;
-    stroke: var(--color-loona-end);
-    transform: translate3d(-100%, 3%, 0);
+    fill: var(--color-loona-end);
+    transform: translate3d(-95%, 3%, 0);
   }
 }
 
 @keyframes loona-l-animation {
   0% {
     opacity: 0;
-    stroke: var(--color-loona-start);
+    fill: var(--color-loona-start);
   }
 
   13% {
@@ -311,32 +317,33 @@ $_crescent-timing-function: cubic-bezier(0, 0.5, 0.5, 1);
   }
 
   56% {
-    stroke: var(--color-loona-start);
+    fill: var(--color-loona-start);
   }
 
   57% {
-    stroke: var(--color-loona-end);
+    fill: var(--color-loona-end);
   }
 
   60% {
-    transform: translate3d(-350%, -150%, 0);
+    transform: translate3d(-345%, -145%, 0);
   }
 
   99% {
     opacity: 1;
+    animation-timing-function: steps(1, end);
   }
 
   100% {
     opacity: 0;
-    stroke: var(--color-loona-end);
-    transform: translate3d(-350%, -150%, 0);
+    fill: var(--color-loona-end);
+    transform: translate3d(-345%, -145%, 0);
   }
 }
 
 @keyframes loona-a-animation {
   0% {
     opacity: 0;
-    stroke: var(--color-loona-start);
+    fill: var(--color-loona-start);
   }
 
   15% {
@@ -362,32 +369,33 @@ $_crescent-timing-function: cubic-bezier(0, 0.5, 0.5, 1);
   }
 
   56% {
-    stroke: var(--color-loona-start);
+    fill: var(--color-loona-start);
   }
 
   57% {
-    stroke: var(--color-loona-end);
+    fill: var(--color-loona-end);
   }
 
   60% {
-    transform: translate3d(255%, -150%, 0);
+    transform: translate3d(251%, -147%, 0);
   }
 
   99% {
     opacity: 1;
+    animation-timing-function: steps(1, end);
   }
 
   100% {
     opacity: 0;
-    stroke: var(--color-loona-end);
-    transform: translate3d(255%, -150%, 0);
+    fill: var(--color-loona-end);
+    transform: translate3d(251%, -147%, 0);
   }
 }
 
 @keyframes loona-slash-animation {
   0% {
     opacity: 0;
-    stroke: var(--color-slash-start);
+    fill: var(--color-slash-start);
   }
 
   18% {
@@ -413,25 +421,26 @@ $_crescent-timing-function: cubic-bezier(0, 0.5, 0.5, 1);
   }
 
   56% {
-    stroke: var(--color-slash-start);
+    fill: var(--color-slash-start);
   }
 
   57% {
-    stroke: var(--color-slash-end);
+    fill: var(--color-slash-end);
   }
 
   60% {
-    transform: translate3d(220%, 1%, 0);
+    transform: translate3d(216%, 1%, 0);
   }
 
   99% {
     opacity: 1;
+    animation-timing-function: steps(1, end);
   }
 
   100% {
     opacity: 0;
-    stroke: var(--color-slash-end);
-    transform: translate3d(220%, 1%, 0);
+    fill: var(--color-slash-end);
+    transform: translate3d(216%, 1%, 0);
   }
 }
 
