@@ -2,7 +2,7 @@
   <g class="yyxy__skeleton" fill="none" stroke="#211F20" stroke-linecap="round">
     <g class="yyxy__branches" stroke-width="4">
       <path class="yyxy__branch yyxy__branch--s" d="M897.75 931.72v187" />
-      <path class="yyxy__branch yyxy__branch--nw" d="M623.75 466.72l.25.28-162-93" />
+      <path class="yyxy__branch yyxy__branch--nw" d="M 624,467 462,374" />
       <path class="yyxy__branch yyxy__branch--ne" d="M1176 467l162-93" />
     </g>
 
